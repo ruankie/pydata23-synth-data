@@ -3,9 +3,13 @@ marp: true
 theme: uncover
 class: invert
 footer: Ruan Pretorius | October 2023
+style: |
+  section {
+    font-size: 32px;
+  }
 ---
 ![height:180px](../assets/pyconza.png)
-# How to build a data pipeline without data:
+# How to build a data pipeline without data
 *Synthetic data generation and testing with Python*
 
 ---
@@ -67,13 +71,13 @@ Used in this demo
 
 ---
 
-## How can we use synthetic data to test data pipelines?
+## 🧪 Synthetic data to test data pipelines
 
 - Synthetic data is artificially generated data that mimics the characteristics and behavior of real data
 - Synthetic data can help us to test our data pipelines by:
-  - Providing us with realistic and representative sample data
-  - Allowing us to control the size, shape, and distribution of the data
-  - Enabling us to simulate different scenarios and edge cases
+  - Providing realistic sample data
+  - Allowing  control of the size, shape, and distribution of the data
+  - Enabling simulations of different scenarios and edge cases
   - Reducing the risk of exposing sensitive or confidential information
 
 ---
