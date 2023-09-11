@@ -40,29 +40,30 @@ Used in this demo
 
 ---
 
-## What is a data pipeline
-and why do we need it?
+## 🧪 What is a data pipeline?
 
-- A data pipeline is a process of moving, transforming, validating, and loading data from various sources into a target database or data warehouse
-- Data pipelines enable us to:
-  - Integrate data from different sources and formats
-  - Perform data quality checks and transformations
-  - Load data into a centralized location for analysis and reporting
-  - Automate and schedule data processing tasks
+- A data pipeline is a series of operations used to extract, load, transform, validate, or write data
+- From various sources into a target file system, database, or data warehouse
 
 ---
 
-## What are the challenges of building and testing data pipelines without real data?
+## 🔍 Data pipelines without real data
 
-- Sometimes, we may not have access to the real data that we want to process in our data pipeline, either because:
-  - The data is sensitive or confidential and cannot be shared
-  - The data is not yet collected or available
-  - The data is too large or complex to handle
-- Without real data, we may face difficulties in:
-  - Designing the data model and schema
-  - Developing the data extraction, transformation, and loading (ETL) logic
-  - Testing the functionality and performance of the data pipeline
-  - Debugging and troubleshooting errors and issues
+- Sometimes, we may not have access to the real data that we want to process in our data pipeline.
+- It could be:
+  - Sensitive or confidential and can't be shared
+  - Not yet collected or available
+  - Too large or complex to handle for initial testing
+
+---
+
+## 🔍 Data pipelines without real data
+
+- Without real data, it is challenging to:
+  - Design the data model and schema
+  - Develop the data extract, transform, and load (ETL) logic
+  - Test the functionality and performance of the data pipeline
+  - Debug and troubleshoot errors and issues
 
 ---
 
