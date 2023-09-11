@@ -16,7 +16,7 @@ footer: Ruan Pretorius | October 2023
 
 - 🖥 I am a data scientist at *[melio.ai](https://melio.ai/)*
 - ☕ I turn coffee into data pipelines and AI
-- 🔗 You can find me on GitHub: *[@ruankie](https://github.com/ruankie)*
+- 🔗 You can find me on GitHub *[@ruankie](https://github.com/ruankie)*
 - ✉️ Or contact me via email: *ruan@melio.ai*
 
 ---
