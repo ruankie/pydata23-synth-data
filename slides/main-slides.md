@@ -1,8 +1,11 @@
 ---
 marp: true
+theme: uncover
+class: invert
 ---
 
-# How to build a data pipeline without data: A case study of synthetic data generation and testing with Python
+# How to build a data pipeline without data:
+A case study of synthetic data generation and testing with Python
 
 ---
 

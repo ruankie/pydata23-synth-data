@@ -27,3 +27,6 @@ This talk is aimed at intermediate-level Python developers who are interested in
     ```shell
     poetry run pytest .
     ```
+
+## References
+- [Marp intro](https://www.youtube.com/watch?v=EzQ-p41wNEE)
