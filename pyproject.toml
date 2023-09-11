@@ -1,9 +1,8 @@
 [tool.poetry]
-name = "py-poetry-template"
+name = "pycon23"
 version = "0.1.0"
-description = "Minimal template for quickly setting up new python projects with Poetry for virtual environment and dependency management."
+description = "How to build a data pipeline without data: A case study of synthetic data generation and testing with Python."
 authors = ["Ruan Pretorius"]
-license = "MIT"
 readme = "README.md"
 packages = [
     { include = "src" },
