@@ -1,13 +1,16 @@
-[![GitHub stars](https://img.shields.io/github/stars/ruankie/poetry-py-template)](https://github.com/ruankie/poetry-py-template/stargazers)
-[![GitHub last commit](https://img.shields.io/github/last-commit/ruankie/poetry-py-template)](https://github.com/ruankie/poetry-py-template/commits/main)
+# How to build a data pipeline without data
 
-# poetry-py-template
+This repo contains my code and presentation for a talk at [PyConZA](https://za.pycon.org/) 2023 which is held in Durban on 5 - 6 October 2023
 
-<img src="https://github.com/ruankie/poetry-py-template/assets/58558211/beac2040-3db6-4ab5-a512-ef137a563140" width="240" />
+<img src="https://za.pycon.org/static/img/logo_bottom.png" width="80" />
 
 ## Description
 
-This is a minimal project template for Python projects that uses Poetry for dependency virtual environment management.
+Data pipelines are essential for transforming, validating, and loading data from various sources into a target database or data warehouse. However, building and testing data pipelines can be challenging when the real data is not available, either due to privacy issues, technical limitations, or simply because the data is not yet collected. How can we ensure that our data pipelines are robust and reliable without having access to the actual data?
+
+In this talk, we will share our experience of creating synthetic data to test data pipelines using Python. We will demonstrate how we used some statistical methods and Python packages such as Faker and SDV to generate realistic synthetic data for different use cases, such as customer profiles, transactions, and time series. We will also show how we used Flyway to load the synthetic data into a Postgres database and perform repeatable deployments. We will discuss the benefits and challenges of using synthetic data for testing data pipelines, as well as some best practices and tips for creating and using synthetic data effectively.
+
+This talk is aimed at intermediate-level Python developers who are interested in learning more about synthetic data generation and testing techniques for data pipelines. The talk will include code examples and live demos of the tools and methods we used. By the end of this talk, you will have a better understanding of how to build a data pipeline without data using Python.
 
 ## Setup
 
@@ -17,46 +20,10 @@ This is a minimal project template for Python projects that uses Poetry for depe
 3. [Install Python 3](https://www.python.org/downloads/) on your machine
 4. Create a virtual environment for your project using the command `poetry install`. This will install all the basic dependencies specified in your `pyproject.toml` file.
 
-### Add Dependencies
-1. You can use the following command to add dependencies to your Poetry env:
-    ```shell
-    poetry add <package>
-    ```
-2. You can also add dev dependencies by running:
-    ```shell
-    poetry add <package> --group dev
-    ```
-### General
-1. Update the `LICENSE` file
-2. Update the `README.md` file
-3. Change the project name, description, version, and authors in `pyproject.toml`
-4. Finally, once you get to this point, you might want to delete the `poetry.lock` file and re-run the following command to update your virtual environment with your new changes:
-    ```shell
-    poetry install
-    ```
-
 ## Usage
-1. Add your own scripts and modules in `src/`
-2. Add your own notebooks in `notebooks/`
-3. Add your own examples of environment variables used in `.env.example`
-4. Add your own unit tests in `tests/`
-5. Double check that you have set up your virtual env correctly by running 
-    ```shell
-    poetry env info
-    ```
-6. To open a shell inside your virtual env, run
-   ```shell
-    poetry shell
-    ```
-7. To run a command within your virtual env, prepend it with `poetry run`. For example:
-   ```shell
-   poetry run echo "hello from poetry env"
-   ```
-8. If at any point you have added more dependencies and you want it to reflect in your `poetry.lock` file, you can run 
-   ```shell
-   poetry update
-   ```
-9. To run your tests, run:
+1. Browse the scripts and notebooks in `src/` and `notebooks/`
+2. Add your environment variables in a `.env` file (see `.env.example` for examples)
+3. To run your tests, run:
     ```shell
     poetry run pytest .
     ```
