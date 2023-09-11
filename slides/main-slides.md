@@ -2,18 +2,22 @@
 marp: true
 theme: uncover
 class: invert
+footer: Ruan Pretorius | October 2023
 ---
-
+![height:180px](../assets/pyconza.png)
 # How to build a data pipeline without data:
-A case study of synthetic data generation and testing with Python
+*Synthetic data generation and testing with Python*
 
 ---
 
 ## About me
 
-- I am a Python developer with X years of experience in building data pipelines
-- I work at Y, a company that does Z
-- You can find me on Twitter, GitHub, or email
+##### Hi there, I'm Ruan 👋
+
+- 🖥 I am a data scientist at *[melio.ai](https://melio.ai/)*
+- ☕ I turn coffee into data pipelines and AI
+- 🔗 You can find me on GitHub: *[@ruankie](https://github.com/ruankie)*
+- ✉️ Or contact me via email: *ruan@melio.ai*
 
 ---
 
@@ -25,6 +29,15 @@ A case study of synthetic data generation and testing with Python
 - What are the tools and methods we used to generate and load synthetic data using Python?
 - What are the benefits and challenges of using synthetic data for testing data pipelines?
 - What are some best practices and tips for creating and using synthetic data effectively?
+
+---
+# Tools
+
+Used in this demo
+
+# 
+
+![height:100px](../assets/docker.svg) ![height:110px](../assets/postgres.png) ![height:110px](../assets/flyway.png) ![height:110px](../assets/python.png) 
 
 ---
 
