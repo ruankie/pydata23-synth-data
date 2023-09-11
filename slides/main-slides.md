@@ -12,7 +12,7 @@ footer: Ruan Pretorius | October 2023
 
 ## About me
 
-##### Hi there, I'm Ruan 👋
+##### Hi there, I'm Ruan Pretorius 👋
 
 - 🖥 I am a data scientist at *[melio.ai](https://melio.ai/)*
 - ☕ I turn coffee into data pipelines and AI
@@ -21,14 +21,13 @@ footer: Ruan Pretorius | October 2023
 
 ---
 
-## Outline
+## 🚏 Outline
 
-- What is a data pipeline and why do we need it?
-- What are the challenges of building and testing data pipelines without real data?
-- How can we use synthetic data to test data pipelines?
-- What are the tools and methods we used to generate and load synthetic data using Python?
-- What are the benefits and challenges of using synthetic data for testing data pipelines?
-- What are some best practices and tips for creating and using synthetic data effectively?
+- What are data pipelines and why do we need them?
+- Challenges of building and testing data pipelines
+- How to use synthetic data to test data pipelines
+- Tools and methods to use when generating reliable synthetic data in Python
+- Benefits and challenges of using synthetic data for testing data pipelines
 
 ---
 # Tools
@@ -41,7 +40,8 @@ Used in this demo
 
 ---
 
-## What is a data pipeline and why do we need it?
+## What is a data pipeline
+and why do we need it?
 
 - A data pipeline is a process of moving, transforming, validating, and loading data from various sources into a target database or data warehouse
 - Data pipelines enable us to:
