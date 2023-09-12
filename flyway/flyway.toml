@@ -1,0 +1,22 @@
+databaseType = "PostgreSql"
+name = "pyconza-23-demo"
+id = "27d98121-6ce1-47b9-a4b6-d71414f88939"
+
+[flywayDesktop]
+developmentEnvironment = "development"
+shadowEnvironment = "shadow"
+schemaModel = "./schema-model"
+
+[redgateCompare]
+filterFile = "filter.rgf"
+
+[flyway]
+mixed = true
+outOfOrder = true
+locations = [ "filesystem:migrations" ]
+validateMigrationNaming = true
+
+[environments.target1]
+url = "jdbc:postgresql://localhost:5432/demo"
+schemas = [ "public" ]
+displayName = "pyconza-23-demo-db"
