@@ -84,11 +84,30 @@ Used in this demo
 
 ## 💃 Demo
 
-- In this talk, I'll show you how you can create synthetic data
+- In this demo, I'll show you how you can create synthetic data
 - Using a Python package called Faker
 - And how to use Flyway to load the synthetic data into a Postgres database for repeatable deployments
 
 ---
+
+## 💵 Our scenario
+
+- Let's pretend we just started a new e-commerce website
+- We have an idea of what kind of data we'll have for
+  - Customers
+  - Products
+  - Transactions
+
+---
+
+## 📚 The data problem
+
+- Now we want to start building different data pipelines and visualisations to see how well our business is doing
+- We want our systems to work as soon as we get customers
+- But we don't have data yet
+
+---
+
 
 ## What are the benefits and challenges of using synthetic data for testing data pipelines?
 
