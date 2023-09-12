@@ -82,11 +82,11 @@ Used in this demo
 
 ---
 
-## What are the tools and methods we used to generate and load synthetic data using Python?
+## 🛠️ Tools and methods for generating synthetic data
 
-- In this talk, we will share our experience of creating synthetic data for different use cases, such as customer profiles, transactions, and time series
-- We will demonstrate how we used some statistical methods and Python packages such as Faker to generate realistic synthetic data
-- We will also show how we used Flyway to load the synthetic data into a Postgres database and perform repeatable deployments
+- In this talk, I'll show you how you can create synthetic data
+- Using a Python package called Faker
+- And how to use Flyway to load the synthetic data into a Postgres database for repeatable deployments
 
 ---
 
