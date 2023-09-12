@@ -44,7 +44,7 @@ Used in this demo
 
 ---
 
-## 🧪 What is a data pipeline?
+## 🛠️ What is a data pipeline?
 
 - A data pipeline is a series of operations used to extract, load, transform, validate, or write data
 - From various sources into a target file system, database, or data warehouse
@@ -82,7 +82,7 @@ Used in this demo
 
 ---
 
-## 🛠️ Tools and methods for generating synthetic data
+## 💃 Demo
 
 - In this talk, I'll show you how you can create synthetic data
 - Using a Python package called Faker
