@@ -132,19 +132,19 @@ Class to store customer information
 class Customer(Base):
   __tablename__ = "customers"
   id = Column(Integer, primary_key=True)
-  name = Column(String(100), nullable=False)
-  email = Column(String(100), nullable=False)
-  phone = Column(String(25), nullable=False)
-  address = Column(String(250), nullable=False)
-  city = Column(String(100), nullable=False)
-  country = Column(String(100), nullable=False)
+  name = Column(String(100))
+  email = Column(String(100))
+  phone = Column(String(25))
+  address = Column(String(250))
+  city = Column(String(100))
+  country = Column(String(100))
 ```
 
 ---
 
 ## 👥 Customer data
 
-Customer generator function that uses `Faker` for synthetic data
+Customer generator using `Faker` for synthetic data
 
 ```python
 def generate_customer(id: int):
@@ -162,7 +162,39 @@ def generate_customer(id: int):
 
 ---
 
+## 🍕 Product object
 
+Class to store product information
+
+```python
+class Product(Base):
+  __tablename__ = "products"
+  id = Column(Integer, primary_key=True)
+  name = Column(String(50))
+  description = Column(String(200))
+  category = Column(String(50))
+  price = Column(Numeric(10, 2))
+```
+---
+## 🍕 Product data
+
+Product generator using `Faker` for synthetic data
+
+```python
+def generate_product(id: int):
+  product = Product(
+      id=id,
+      name=fake.word(),
+      description=fake.sentence(),
+      category=fake.random_element(
+        elements=("Electronics", "Fashion", "Books", "Games", "Sports", "Food")
+      ),
+      price=fake.pydecimal(left_digits=3, right_digits=2, positive=True)
+  )
+  return product
+```
+
+---
 
 ---
 ---
