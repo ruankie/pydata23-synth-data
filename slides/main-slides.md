@@ -193,6 +193,92 @@ def generate_product(id: int):
   )
   return product
 ```
+---
+
+## 💻 Device object
+
+Class to store device information
+
+```python
+class Device(Base):
+  __tablename__ = "devices"
+  id = Column(Integer, primary_key=True)
+  platform = Column(String(250))
+  ipv4 = Column(String(50))
+  macaddress = Column(String(50))
+```
+---
+## 💻 Device data
+
+Device generator using `Faker` for synthetic data
+
+```python
+def generate_device(id: int):
+  device = Device(
+      id=id,
+      platform=fake.user_agent(),
+      ipv4=fake.ipv4(),
+      macaddress=fake.mac_address()
+  )
+  return device
+```
+---
+## 💰 Transaction object
+
+Class to store transaction information
+
+```python
+class Transaction(Base):
+  __tablename__ = "transactions"
+  id = Column(Integer, primary_key=True)
+  date_time = Column(DateTime)
+  customer_id = Column(Integer)
+  product_id = Column(Integer)
+  quantity = Column(Integer)
+  device_id = Column(Integer)
+  payment_method = Column(String(50))
+```
+---
+## 💰 Transaction data
+
+Transaction generator using `Faker` for synthetic data
+
+```python
+def generate_transaction(
+  id: int,
+  customers: list[Customer],
+  products: list[Product],
+  devices: list[Device]
+):
+  tr = Transaction(
+      id=id,
+      date_time=fake.date_between(start_date=START_DATE, end_date=END_DATE),
+      customer_id=random.choice(customers).id,
+      product_id=random.choice(products).id,
+      quantity=fake.random_int(min=1, max=20),
+      device_id=random.choice(devices).id,
+      payment_method=fake.random_element(
+        elements=("Credit Card", "EFT", "Bitcoin", "Reward Points")
+      )
+  )
+  return tr
+```
+
+---
+
+## 📊 Generate data
+
+Use functions to generate synthetic data
+
+```python
+customers = [generate_customer(i) for i in range(1000)]
+products = [generate_product(i) for i in range(60)]
+devices = [generate_device(i) for i in range(1000)]
+
+transactions = [
+  generate_transaction(i, customers, products, devices) for i in range(5000)
+]
+```
 
 ---
 
