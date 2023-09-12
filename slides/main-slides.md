@@ -104,10 +104,69 @@ Used in this demo
 
 - Now we want to start building different data pipelines and visualisations to see how well our business is doing
 - We want our systems to work as soon as we get customers
-- But we don't have data yet
+- But we don't have data yet (so let's make some)
 
 ---
 
+## 🪚 Import tools
+
+* `SQLAlchemy` to create database objects
+  ```python
+  from sqlalchemy import Column, Integer, String, DateTime
+  from sqlalchemy.orm import declarative_base
+  Base = declarative_base()
+  ```
+
+* `Faker` to generate synthetic data
+  ```python
+  from faker import Faker
+  fake = Faker()
+  ```
+
+---
+## 👥 Customer object
+
+Class to store customer information
+
+```python
+class Customer(Base):
+  __tablename__ = "customers"
+  id = Column(Integer, primary_key=True)
+  name = Column(String(100), nullable=False)
+  email = Column(String(100), nullable=False)
+  phone = Column(String(25), nullable=False)
+  address = Column(String(250), nullable=False)
+  city = Column(String(100), nullable=False)
+  country = Column(String(100), nullable=False)
+```
+
+---
+
+## 👥 Customer data
+
+Customer generator function that uses `Faker` for synthetic data
+
+```python
+def generate_customer(id: int):
+  customer = Customer(
+      id=id,
+      name=fake.name(),
+      email=fake.email(),
+      phone=fake.phone_number(),
+      address=fake.street_address(),
+      city=fake.city(),
+      country=fake.country()
+  )
+  return customer
+```
+
+---
+
+
+
+---
+---
+---
 
 ## What are the benefits and challenges of using synthetic data for testing data pipelines?
 
