@@ -1,0 +1,9 @@
+
+CREATE TABLE devices (
+	id SERIAL NOT NULL, 
+	platform VARCHAR(250) NOT NULL, 
+	ipv4 VARCHAR(50) NOT NULL, 
+	macaddress VARCHAR(50) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
