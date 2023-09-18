@@ -1,7 +1,8 @@
 ---
 marp: true
-theme: uncover
+theme: default
 class: invert
+# size: 16:9
 footer: Ruan Pretorius | October 2023
 style: |
   section {
