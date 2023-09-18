@@ -34,9 +34,16 @@ style: |
 - Benefits and challenges of using synthetic data for testing data pipelines
 
 ---
+
+> Pain, claim, gain
+> Make long version then shorten for talk 
+
+---
 # Tools
 
 Used in this demo
+
+> Arch diagram
 
 # 
 
