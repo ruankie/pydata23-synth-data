@@ -354,7 +354,22 @@ transactions = [
 
 ---
 
+# 🪽 Use Flyway to create tables and data
+> Show CLI and GUI
+
 ---
+
+# 👀 Inspect data
+> Inspect database with `pgAdmin`
+
+---
+
+# 🏁 Conclusion
+
+> Now we can develop and test our downstream pipelines and apps
+
+> Summarise and end
+
 ---
 ---
 
