@@ -40,17 +40,6 @@ style: |
 > Make long version then shorten for talk 
 
 ---
-# Tools
-
-Used in this demo
-
-> Arch diagram
-
-# 
-
-![height:100px](../assets/docker.svg) ![height:110px](../assets/postgres.png) ![height:110px](../assets/flyway.png) ![height:110px](../assets/python.png) 
-
----
 
 ## 🛠️ What is a data pipeline?
 
@@ -72,10 +61,9 @@ Used in this demo
 ## 🔍 Data pipelines without real data
 
 - Without real data, it is challenging to:
-  - Design the data model and schema
+  - Design and build downstream apps that consume the data
   - Develop the data extract, transform, and load (ETL) logic
   - Test the functionality and performance of the data pipeline
-  - Debug and troubleshoot errors and issues
 
 ---
 
@@ -93,8 +81,12 @@ Used in this demo
 ## 💃 Demo
 
 - In this demo, I'll show you how you can create synthetic data
-- Using a Python package called Faker
-- And how to use Flyway to load the synthetic data into a Postgres database for repeatable deployments
+- Using a Python package called `Faker`
+- And how to use `Flyway` to load the synthetic data into a `Postgres` database for repeatable deployments
+
+# 
+
+![height:110px](../assets/postgres.png) ![height:110px](../assets/flyway.png) ![height:110px](../assets/python.png) 
 
 ---
 
@@ -110,9 +102,20 @@ Used in this demo
 
 ## 📚 The data problem
 
-- Now we want to start building different data pipelines and visualisations to see how well our business is doing
-- We want our systems to work as soon as we get customers
-- But we don't have data yet (so let's make some)
+![bg right height:55%](../assets/arch-customers.jpg)
+
+* Now we want to start building different data pipelines and visualisations to see how well our business is doing
+* We want our systems to work as soon as we get customers
+
+---
+
+## 📚 The data problem
+
+![bg right height:55%](../assets/arch-synth.jpg)
+
+* But we don't have customers yet (or data for them)
+* So let's make some
+* Then we can build everything downstream and it should work when we get real data
 
 ---
 
