@@ -311,14 +311,41 @@ transactions = [
 ---
 
 # 💬 Generate SQL scripts
+> Create SQL string > Write to `.sql` file
 
-- You can do some simple string manipulation:
+* You can do some simple string manipulation:
+  ```python
+  sql = f"""CREATE TABLE {table} (
+    id SERIAL NOT NULL, 
+    name VARCHAR(100) NOT NULL
+  );"""
+  ```
+* Or you can use `SQLAlchemy`:
+  ```python
+  from sqlalchemy import create_engine
+  from sqlalchemy.schema import CreateTable
+  
+  engine = create_engine("postgresql:///:memory:")
+  sql = str(CreateTable(cls.__table__).compile(engine))
+  ```
+
+---
+
+# 💬 Generate SQL scripts
+> Create SQL string > Write to `.sql` file
+
+* You can do some simple string manipulation:
   ```python
   sql = f"INSERT INTO {table} VALUES ({object.id}, {object.name})"
   ```
-- Or you can coerce `SQLAlchemy`:
+* Or you can use `SQLAlchemy`:
   ```python
-  ...
+  from sqlalchemy.sql.expression import insert
+
+  insert_stmt = insert(cls.__table__)\
+    .values(records)\ # list of records from helper function
+    .compile(compile_kwargs={"literal_binds": True})
+  sql = str(insert_stmt)
   ```
 
 ---
