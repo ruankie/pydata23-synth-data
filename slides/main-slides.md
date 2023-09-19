@@ -279,7 +279,7 @@ def generate_transaction(
 
 ## 📊 Generate data
 
-Use functions to generate synthetic data
+Use our functions to generate synthetic data
 
 ```python
 customers = [generate_customer(i) for i in range(1000)]
@@ -290,6 +290,36 @@ transactions = [
   generate_transaction(i, customers, products, devices) for i in range(5000)
 ]
 ```
+
+---
+
+# ✏️ Write data do database
+- We can either
+  - Just use `SQLAlchemy` to write to our database
+  - Or we can use `Flyway` (we'll use this option)
+
+
+---
+
+# 💬 Generate SQL scripts
+
+- `Flyway` is almost like `git` for your database. It tracks SQL scripts.
+- So we need to get the `CREATE` and `INSERT` statements
+  - That will create our tables
+  - And to insert our synthetic data
+
+---
+
+# 💬 Generate SQL scripts
+
+- You can do some simple string manipulation:
+  ```python
+  sql = f"INSERT INTO {table} VALUES ({object.id}, {object.name})"
+  ```
+- Or you can coerce `SQLAlchemy`:
+  ```python
+  ...
+  ```
 
 ---
 
