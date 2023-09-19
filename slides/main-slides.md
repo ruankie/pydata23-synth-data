@@ -119,7 +119,11 @@ style: |
 
 ---
 
-## 🪚 Import tools
+## 🪚 Install and import tools
+
+```shell
+pip install SQLAlchemy Faker
+```
 
 * `SQLAlchemy` to create database objects
   ```python
@@ -324,7 +328,7 @@ transactions = [
   ```python
   from sqlalchemy import create_engine
   from sqlalchemy.schema import CreateTable
-  
+
   engine = create_engine("postgresql:///:memory:")
   sql = str(CreateTable(cls.__table__).compile(engine))
   ```
