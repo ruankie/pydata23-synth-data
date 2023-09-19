@@ -9,7 +9,9 @@ style: |
     font-size: 32px;
   }
 ---
+
 ![bg left height:300px](../assets/pyconza.png)
+
 # How to build a data pipeline without data
 > *Synthetic data generation and testing with Python*
 
