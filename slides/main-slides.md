@@ -9,9 +9,9 @@ style: |
     font-size: 32px;
   }
 ---
-![height:180px](../assets/pyconza.png)
+![bg left height:300px](../assets/pyconza.png)
 # How to build a data pipeline without data
-*Synthetic data generation and testing with Python*
+> *Synthetic data generation and testing with Python*
 
 ---
 
@@ -397,7 +397,7 @@ transactions = [
 
 ---
 
-## Summary
+## 📜 Summary
 
 - In this talk, we learned how to build a data pipeline without real data using Python
 - We discussed the challenges of building and testing data pipelines without real data
@@ -407,7 +407,7 @@ transactions = [
 
 ---
 
-## Thank you!
+## <!--fit--> 🙏 Thank you!
 
 - I hope you enjoyed this talk and learned something new
 - If you have any questions or feedback, please feel free to contact me
