@@ -84,9 +84,9 @@ style: |
 - Using a Python package called `Faker`
 - And how to use `Flyway` to load the synthetic data into a `Postgres` database for repeatable deployments
 
-# 
-
-![height:110px](../assets/postgres.png) ![height:110px](../assets/flyway.png) ![height:110px](../assets/python.png) 
+![bg right height:90px](../assets/postgres.png)
+![bg right height:90px](../assets/flyway.png)
+![bg right height:90px](../assets/python.png)
 
 ---
 
