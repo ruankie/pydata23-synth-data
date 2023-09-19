@@ -297,7 +297,7 @@ transactions = [
 
 ---
 
-# ✏️ Write data do database
+## ✏️ Write data do database
 - We can either
   - Just use `SQLAlchemy` to write to our database
   - Or we can use `Flyway` (we'll use this option)
@@ -305,7 +305,7 @@ transactions = [
 
 ---
 
-# 💬 Generate SQL scripts
+## 💬 Generate SQL scripts
 
 - `Flyway` is almost like `git` for your database. It tracks SQL scripts.
 - So we need to get the `CREATE` and `INSERT` statements
@@ -314,7 +314,7 @@ transactions = [
 
 ---
 
-# 💬 Generate SQL scripts
+## 💬 Generate SQL scripts
 > Create SQL string > Write to `.sql` file
 
 * You can do some simple string manipulation:
@@ -335,7 +335,7 @@ transactions = [
 
 ---
 
-# 💬 Generate SQL scripts
+## 💬 Generate SQL scripts
 > Create SQL string > Write to `.sql` file
 
 * You can do some simple string manipulation:
@@ -354,17 +354,17 @@ transactions = [
 
 ---
 
-# 🪽 Use Flyway to create tables and data
+## 🪽 Use Flyway to create tables and data
 > Show CLI and GUI
 
 ---
 
-# 👀 Inspect data
+## 👀 Inspect data
 > Inspect database with `pgAdmin`
 
 ---
 
-# 🏁 Conclusion
+## 🏁 Conclusion
 
 > Now we can develop and test our downstream pipelines and apps
 
