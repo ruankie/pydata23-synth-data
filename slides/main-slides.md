@@ -300,9 +300,12 @@ transactions = [
 ---
 
 ## ✏️ Write data do database
-- We can either
-  - Just use `SQLAlchemy` to write to our database
-  - Or we can use `Flyway` (we'll use this option)
+* We can either
+  * Just use `SQLAlchemy` to write to our database
+  * Or use `Flyway` (we'll use this option)
+    - It handles version control of your SQL scripts
+    - And handles database migrations
+    - Makes it easier to collaborate with other developers
 
 
 ---
