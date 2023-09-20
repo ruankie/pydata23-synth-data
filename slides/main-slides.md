@@ -300,20 +300,22 @@ transactions = [
 ---
 
 ## ✏️ Write data do database
-* We can either
-  * Just use `SQLAlchemy` to write to our database
-  * Or use `Flyway` (we'll use this option)
-    - It handles version control of your SQL scripts
-    - And handles database migrations
-    - Makes it easier to collaborate with other developers
+> We have a choice
+* Just use `SQLAlchemy` to write to our database
+* Or use `Flyway` (we'll use this option)
+  - It handles version control of our SQL scripts
+  - And handles database migrations
+    - For repeatable deployments
+    - And certainty about our database state
+  - This all makes it easier to collaborate with other developers
 
 
 ---
 
 ## 💬 Generate SQL scripts
 
-- `Flyway` is almost like `git` for your database. It tracks SQL scripts.
-- So we need to get the `CREATE` and `INSERT` statements
+* `Flyway` is almost like `git` for your database
+* So we need to get the `CREATE` and `INSERT` statements
   - That will create our tables
   - And to insert our synthetic data
 
