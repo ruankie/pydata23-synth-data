@@ -362,7 +362,25 @@ transactions = [
 ---
 
 ## 🪽 Use Flyway to create tables and data
-> Show CLI and GUI
+> Install the CLI ([instructions online](https://documentation.red-gate.com/fd/command-line-184127404.html))
+
+* Configure Flyway by creating a new project and specifying database connections
+
+* Drop all tables, views, procedures etc. in the configured schemas to start fresh
+  ```shell
+  flyway clean
+  ```
+
+* Migrate schemas to the latest version by applying SQL scripts
+  ```shell
+  flyway migrate
+  ```
+
+---
+
+## 🪽 Use Flyway to create tables and data
+> Or use Flyway Desktop for GUI
+
 
 ---
 
