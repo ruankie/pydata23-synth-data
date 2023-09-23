@@ -1,6 +1,6 @@
 databaseType = "PostgreSql"
-name = "pyconza-23-demo"
-id = "27d98121-6ce1-47b9-a4b6-d71414f88939"
+name = "pyconza23-demo"
+id = "338f79c9-9cbd-48ea-a223-248b26ccfce0"
 
 [flywayDesktop]
 developmentEnvironment = "development"
@@ -16,7 +16,8 @@ outOfOrder = true
 locations = [ "filesystem:migrations" ]
 validateMigrationNaming = true
 
-[environments.target1]
+[environments.demo-db]
 url = "jdbc:postgresql://localhost:5432/demo"
+user = "postgres"
+password = "postgres"
 schemas = [ "public" ]
-displayName = "pyconza-23-demo-db"
