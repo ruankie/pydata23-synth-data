@@ -15,10 +15,11 @@ mixed = true
 outOfOrder = true
 locations = [ "filesystem:migrations" ]
 validateMigrationNaming = true
+cleanDisabled = false
 
-[environments.demo]
+[environments.default]
+name = "demo-db"
 url = "jdbc:postgresql://localhost:5432/demo"
 user = "postgres"
 password = "postgres"
 schemas = [ "public" ]
-displayName = "pyconza23-demo"
