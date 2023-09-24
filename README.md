@@ -28,5 +28,23 @@ This talk is aimed at intermediate-level Python developers who are interested in
     poetry run pytest .
     ```
 
+### Slides 
+See the slides at [`slides/`](./slides/)
+
+### Flyway
+To set up Flyway, run the setup script:
+```shell
+cd flyway
+./configure_flyway_cli.sh
+```
+
+Now you can run the flyway CLI commands like
+```shell
+flyway clean
+```
+```shell
+flyway migrate
+```
+
 ## References
 - [Marp intro](https://www.youtube.com/watch?v=EzQ-p41wNEE)
