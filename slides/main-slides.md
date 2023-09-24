@@ -44,15 +44,15 @@ style: |
 
 ## 🛠️ What is a data pipeline?
 
-- A data pipeline is a series of operations used to extract, load, transform, validate, or write data
-- From various sources into a target file system, database, or data warehouse
+* A data pipeline is a series of operations used to extract, load, transform, validate, or write data
+* From various sources into a target file system, database, or data warehouse
 
 ---
 
 ## 🔍 Data pipelines without real data
 
-- Sometimes, we may not have access to the real data that we want to process in our data pipeline.
-- It could be:
+* Sometimes, we may not have access to the real data that we want to process in our data pipeline.
+* It could be:
   - Sensitive or confidential and can't be shared
   - Not yet collected or available
   - Too large or complex to handle for initial testing
@@ -61,7 +61,7 @@ style: |
 
 ## 🔍 Data pipelines without real data
 
-- Without real data, it is challenging to:
+* Without real data, it is challenging to:
   - Design and build downstream apps that consume the data
   - Develop the data extract, transform, and load (ETL) logic
   - Test the functionality and performance of the data pipeline
@@ -70,8 +70,8 @@ style: |
 
 ## 🧪 Synthetic data to test data pipelines
 
-- Synthetic data is artificially generated data that mimics the characteristics and behavior of real data
-- Synthetic data can help us to test our data pipelines by:
+* Synthetic data is artificially generated data that mimics the characteristics and behavior of real data
+* Synthetic data can help us to test our data pipelines by:
   - Providing realistic sample data
   - Allowing  control of the size, shape, and distribution of the data
   - Enabling simulations of different scenarios and edge cases
@@ -419,29 +419,29 @@ transactions = [
 
 ## 💡 Tips & bests practices
 
-- Define the scope and purpose of your synthetic data before starting
-- Be careful of wasting time trying to make perfectly realistic data
-- Use existing tools and libraries to generate synthetic data where possible
-- Validate and verify your synthetic data against your real data schema and business rules
-- Document your synthetic data generation process and code
+* Define the scope and purpose of your synthetic data before starting
+* Be careful of wasting time trying to make perfectly realistic data
+* Use existing tools and libraries to generate synthetic data where possible
+* Validate and verify your synthetic data against your real data schema and business rules
+* Document your synthetic data generation process and code
 
 ---
 
 # 📜 Summary
 
-- We discussed some challenges of building and testing data pipelines without real data
-- We learned how to build synthetic data in Python to test our data pipelines
-- We also showed how we used Flyway to load the synthetic data into a Postgres database
+* We discussed some challenges of building and testing data pipelines without real data
+* We learned how to build synthetic data in Python to test our data pipelines
+* We also showed how we used Flyway to load the synthetic data into a Postgres database
 
 ---
 
 #
 
-## <!--fit--> 🙏 Thank you!
+## <!--fit--> 🐍 Thank you!
 
 #
 
-- 🔗 GitHub *[@ruankie](https://github.com/ruankie)*
+- 🔗 GitHub: *[@ruankie](https://github.com/ruankie)*
 - ✉️ Email: *ruan@melio.ai*
 
 #
