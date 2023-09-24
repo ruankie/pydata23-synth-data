@@ -379,13 +379,30 @@ transactions = [
 ---
 
 ## 🪽 Use Flyway to create tables and data
-> Or use Flyway Desktop for GUI
+> After downloading and installing Flyway Desktop
 
+* Configure Flyway by creating a new project and specifying database connections
+
+---
+
+## 🪽 Use Flyway to create tables and data
+> To start fresh, perform a `clean` to drop all tables, views, procedures etc. in the configured schemas
+
+![height:400](../assets/flyway-clean.gif)
+
+---
+
+## 🪽 Use Flyway to create tables and data
+> Perform a `migrate` to update schemas to the latest version by applying SQL scripts
+
+![height:400](../assets/flyway-migrate.gif)
 
 ---
 
 ## 👀 Inspect data
-> Inspect database with `pgAdmin`
+> Inspect database with `pgAdmin` to see if your synthetic data is ready
+
+![height:400](../assets/pgadmin-check-data.gif)
 
 ---
 
