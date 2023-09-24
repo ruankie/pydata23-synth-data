@@ -3,7 +3,7 @@ marp: true
 theme: default
 class: invert
 # size: 16:9
-footer: Ruan Pretorius | October 2023
+footer: Ruan Pretorius | October 2023 | ![grayscale height:15](../assets/melio-logo.png)
 style: |
   section {
     font-size: 32px;
@@ -21,10 +21,14 @@ style: |
 
 ##### Hi there, I'm Ruan Pretorius 👋
 
-- 🖥 I am a data scientist at *[melio.ai](https://melio.ai/)*
+- 🖥 I am a data scientist at *[greyscalemelio.ai](https://melio.ai/)*
 - ☕ I turn coffee into data pipelines and AI
 - 🔗 You can find me on GitHub *[@ruankie](https://github.com/ruankie)*
 - ✉️ Or contact me via email: *ruan@melio.ai*
+
+#
+
+![height:50](../assets/melio-logo.png)
 
 ---
 
