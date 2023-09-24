@@ -21,7 +21,7 @@ style: |
 
 ##### Hi there, I'm Ruan Pretorius 👋
 
-- 🖥 I am a data scientist at *[greyscalemelio.ai](https://melio.ai/)*
+- 🖥 I am a data scientist at *[melio.ai](https://melio.ai/)*
 - ☕ I turn coffee into data pipelines and AI
 - 🔗 You can find me on GitHub *[@ruankie](https://github.com/ruankie)*
 - ✉️ Or contact me via email: *ruan@melio.ai*
@@ -39,11 +39,6 @@ style: |
 - How to use synthetic data to test data pipelines
 - Tools and methods to use when generating reliable synthetic data in Python
 - Benefits and challenges of using synthetic data for testing data pipelines
-
----
-
-> Pain, claim, gain
-> Make long version then shorten for talk 
 
 ---
 
@@ -411,52 +406,44 @@ transactions = [
 
 ---
 
-## 🏁 Conclusion
+## ⚖️ Pros and cons of synthetic data
 
-> Now we can develop and test our downstream pipelines and apps
-
-> Summarise and end
-
----
----
-
-## What are the benefits and challenges of using synthetic data for testing data pipelines?
-
-- Some of the benefits of using synthetic data are:
+* Benefits:
   - It can speed up the development and testing process
   - It can increase the coverage and quality of testing
-  - It can improve the scalability and reliability of the data pipeline
-- Some of the challenges of using synthetic data are:
+* Challenges & limitations:
   - It may not capture all the nuances and variations of real data
-  - It may introduce biases or errors in the synthetic data generation process
   - It may require additional effort and resources to create and maintain synthetic data
 
 ---
 
-## What are some best practices and tips for creating and using synthetic data effectively?
+## 💡 Tips & bests practices
 
-- Some of the best practices and tips are:
-  - Define the scope and purpose of your synthetic data
-  - Use existing tools and libraries to generate synthetic data
-  - Validate and verify your synthetic data against your real data schema and business rules
-  - Document your synthetic data generation process and code
-  - Keep your synthetic data up-to-date with your real data changes
+- Define the scope and purpose of your synthetic data before starting
+- Be careful of wasting time trying to make perfectly realistic data
+- Use existing tools and libraries to generate synthetic data where possible
+- Validate and verify your synthetic data against your real data schema and business rules
+- Document your synthetic data generation process and code
 
 ---
 
-## 📜 Summary
+# 📜 Summary
 
-- In this talk, we learned how to build a data pipeline without real data using Python
-- We discussed the challenges of building and testing data pipelines without real data
-- We showed how we used synthetic data to test our data pipelines
-- We demonstrated how we used Python packages such as Faker to generate realistic synthetic data
+- We discussed some challenges of building and testing data pipelines without real data
+- We learned how to build synthetic data in Python to test our data pipelines
 - We also showed how we used Flyway to load the synthetic data into a Postgres database
 
 ---
 
+#
+
 ## <!--fit--> 🙏 Thank you!
 
-- I hope you enjoyed this talk and learned something new
-- If you have any questions or feedback, please feel free to contact me
-- You can find the code and slides for this talk on GitHub
+#
 
+- 🔗 GitHub *[@ruankie](https://github.com/ruankie)*
+- ✉️ Email: *ruan@melio.ai*
+
+#
+
+![height:50](../assets/melio-logo.png)
