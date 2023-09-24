@@ -417,7 +417,7 @@ transactions = [
 
 ---
 
-## 💡 Tips & bests practices
+## 💡 Tips & best practices
 
 * Define the scope and purpose of your synthetic data before starting
 * Be careful of wasting time trying to make perfectly realistic data
