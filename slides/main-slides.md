@@ -85,6 +85,7 @@ style: |
 - In this demo, I'll show you how you can create synthetic data
 - Using a Python package called `Faker`
 - And how to use `Flyway` to load the synthetic data into a `Postgres` database for repeatable deployments
+- So that you can test your pipelines without real data
 
 ![bg right height:90px](../assets/postgres.png)
 ![bg right height:90px](../assets/flyway.png)
