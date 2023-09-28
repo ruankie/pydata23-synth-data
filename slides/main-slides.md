@@ -21,8 +21,9 @@ style: |
 
 ##### Hi there, I'm Ruan Pretorius 👋
 
-- 🖥 I am a data scientist at *[melio.ai](https://melio.ai/)*
 - ☕ I turn coffee into data pipelines and AI
+- 🖥 I am a data scientist at *[melio.ai](https://melio.ai/)*
+  - We help you build and deploy your data intensive apps to unlock value from your data
 - 🔗 You can find me on GitHub *[@ruankie](https://github.com/ruankie)*
 - ✉️ Or contact me via email: *ruan@melio.ai*
 
@@ -443,7 +444,6 @@ transactions = [
 
 - 🔗 GitHub: *[@ruankie](https://github.com/ruankie)*
 - ✉️ Email: *ruan@melio.ai*
+- 🏠 Melio website: *[melio.ai](https://melio.ai)*
 
-#
-
-![height:50](../assets/melio-logo.png)
+  ![height:50](../assets/melio-logo.png)
