@@ -10,7 +10,7 @@ style: |
   }
 ---
 
-![bg left height:300px](../assets/pyconza.png)
+![bg left:35% height:300px](../assets/pyconza.png)
 
 # How to build a data pipeline without data
 > *Synthetic data generation and testing with Python*
@@ -87,9 +87,9 @@ style: |
 - And how to use `Flyway` to load the synthetic data into a `Postgres` database for repeatable deployments
 - So that you can test your pipelines without real data
 
-![bg right height:90px](../assets/postgres.png)
-![bg right height:90px](../assets/flyway.png)
-![bg right height:90px](../assets/python.png)
+![bg right:30% height:90px](../assets/postgres.png)
+![bg right:30% height:90px](../assets/flyway.png)
+![bg right:30% height:90px](../assets/python.png)
 
 ---
 
