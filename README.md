@@ -21,17 +21,10 @@ This talk is aimed at intermediate-level Python developers who are interested in
 4. Create a virtual environment for your project using the command `poetry install`. This will install all the basic dependencies specified in your `pyproject.toml` file.
 
 ## Usage
-1. Browse the scripts and notebooks in `src/` and `notebooks/`
-2. Add your environment variables in a `.env` file (see `.env.example` for examples)
-3. To run your tests, run:
-    ```shell
-    poetry run pytest .
-    ```
+### Synthetic data creation
+1. Add some example synthetic data for an e-commerce store (see the `notebooks/online-store-data.ipynb` notebook)
 
-### Slides 
-See the slides at [`slides/`](./slides/)
-
-### Flyway
+### Flyway migration
 To set up Flyway, run the setup script:
 ```shell
 cd flyway
@@ -45,6 +38,10 @@ flyway clean
 ```shell
 flyway migrate
 ```
+
+
+### Slides 
+See the slides at [`slides/`](./slides/)
 
 ## References
 - [Marp intro](https://www.youtube.com/watch?v=EzQ-p41wNEE)
