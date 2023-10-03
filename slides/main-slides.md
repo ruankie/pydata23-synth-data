@@ -3,7 +3,7 @@ marp: true
 theme: default
 class: invert
 # size: 16:9
-footer: Ruan Pretorius | October 2023 | ![grayscale height:15](../assets/melio-logo.png)
+footer: Ruan Pretorius | October 2023 | ![grayscale height:15](../assets/melio-logo.svg)
 style: |
   section {
     font-size: 32px;
@@ -23,13 +23,13 @@ style: |
 
 - ☕ I turn coffee into data pipelines and AI
 - 🖥 I am a data scientist at *[melio.ai](https://melio.ai/)*
-  - We help you build and deploy your data intensive apps to unlock value from your data
+  - We help you build and deploy your data intensive apps to unlock value from your data, follow us on LinkedIn
 - 🔗 You can find me on GitHub *[@ruankie](https://github.com/ruankie)*
 - ✉️ Or contact me via email: *ruan@melio.ai*
 
 #
 
-![height:50](../assets/melio-logo.png)
+![height:50](../assets/melio-logo.svg)
 
 ---
 
@@ -446,4 +446,4 @@ transactions = [
 - ✉️ Email: *ruan@melio.ai*
 - 🏠 Melio website: *[melio.ai](https://melio.ai)*
 
-  ![height:50](../assets/melio-logo.png)
+  ![height:50](../assets/melio-logo.svg)
