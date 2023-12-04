@@ -3,14 +3,14 @@ marp: true
 theme: default
 class: invert
 # size: 16:9
-footer: Ruan Pretorius | October 2023 | ![grayscale height:15](../assets/melio-logo.svg)
+footer: Ruan Pretorius | December 2023 | ![grayscale height:15](../assets/melio-logo.svg)
 style: |
   section {
     font-size: 32px;
   }
 ---
 
-![bg left:35% height:300px](../assets/pyconza.png)
+![bg left:35% height:256px](../assets/pydata-logo.png)
 
 # How to build a data pipeline without data
 > *Synthetic data generation and testing with Python*
