@@ -22,22 +22,41 @@ This talk is aimed at intermediate-level Python developers who are interested in
 
 ## Usage
 ### Synthetic data creation
-1. Add some example synthetic data for an e-commerce store (see the `notebooks/online-store-data.ipynb` notebook)
+1. Create some example synthetic data for an e-commerce store (see the `notebooks/online-store-data.ipynb` notebook)
 
 ### Flyway migration
-To set up Flyway, run the setup script:
-```shell
-cd flyway
-./configure_flyway_cli.sh
-```
+0. Make sure you have Flyway installed. There is a [free community version](https://flywaydb.org/community) available.
+    - You will have to create an account and sign in to use Flyway.
 
-Now you can run the flyway CLI commands like
-```shell
-flyway clean
-```
-```shell
-flyway migrate
-```
+1. To set up Flyway, run the setup script:
+    ```shell
+    cd flyway
+    ./configure_flyway_cli.sh
+    ```
+
+2. Set up a Postgres database to store your synthetic data
+    - You can use any Postgres database but the easiest way is by running it in a container. You can do this by running:
+    ```shell
+    docker compose up
+    ```
+    - This sets up an empty database called `demo` on `localhost:5432` with username and password both `postgres`
+    - You can change any of these details by modifying the `docker-compose.yml` file
+
+3. Make sure your Flyway config matches the database you want to use
+    - This should already be set up, but you can check the contents of these files to be sure:
+        - `flyway/flyway.toml`
+        - `flyway/flyway.user.toml`
+    - You can also mange this config through the Flyway Desktop UI by either
+        - Loading an existing project and pointing it to the above `.toml` files
+        - Create a new project and fill in your database details
+
+4. Now you can use Flyway to migrate your synthetic data to your database. Either use the Flyway Desktop UI or run the CLI commands:
+    ```shell
+    flyway clean
+    ```
+    ```shell
+    flyway migrate
+    ```
 
 
 ### Slides 
