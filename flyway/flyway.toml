@@ -1,5 +1,5 @@
 databaseType = "PostgreSql"
-name = "pyconza23-demo"
+name = "pydata-demo"
 id = "338f79c9-9cbd-48ea-a223-248b26ccfce0"
 
 [flywayDesktop]
