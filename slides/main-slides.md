@@ -447,3 +447,4 @@ transactions = [
 - 🏠 Melio website: *[melio.ai](https://melio.ai)*
 
   ![height:50](../assets/melio-logo.svg)
+  ![bg right:40% height:370](../assets/github-qr.png)
