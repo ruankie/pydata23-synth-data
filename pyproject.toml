@@ -1,12 +1,9 @@
 [tool.poetry]
-name = "pycon23"
+name = "pydata23"
 version = "0.1.0"
-description = "How to build a data pipeline without data: A case study of synthetic data generation and testing with Python."
+description = "How to build a data pipeline without data."
 authors = ["Ruan Pretorius"]
 readme = "README.md"
-packages = [
-    { include = "src" },
-]
 
 [tool.poetry.dependencies]
 python = "^3.11"
